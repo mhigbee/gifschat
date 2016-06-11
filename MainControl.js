@@ -1,6 +1,6 @@
 angular.module('gifsChat').controller('MainControl', function(mainService, $scope){
 
-    $scope.gifs;
+    $scope.gifs = [];
 
     $scope.buttonClick = function(){
         mainService.getGifs($scope.gifQuery)

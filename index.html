@@ -14,8 +14,9 @@
         <button type="button" class="btn btn-primary" ng-click="buttonClick()">Send</button>
 
     </section>
+    <hr>
     <section class="image-section container" ng-repeat="gif in gifs">
-        <img ng-src="{{gif.images.downsized_large.url}}"/>
+        <img ng-src="{{gif.images.fixed_height.url}}"/>
     </section>
 </main>
 

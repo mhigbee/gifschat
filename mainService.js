@@ -10,5 +10,5 @@ angular.module('gifsChat').service('mainService', function($http, $q){
             return console.error(error)
         });
     };
-
+    //https://github.com/Giphy/GiphyAPI
 });
