@@ -1,0 +1,12 @@
+body {
+    background: lightgrey;
+}
+.first-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-section img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

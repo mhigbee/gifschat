@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gifsChat">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+<body ng-controller="MainControl">
+<main>
+    <section class="container first-section">
+        <h1>Get Some Gifs</h1>
+        <input type="text" class="form-control" placeholder="Gif Text" aria-describedby="basic-addon1" ng-model="gifQuery">
+        <button type="button" class="btn btn-primary" ng-click="buttonClick()">Send</button>
+
+    </section>
+    <section class="image-section container" ng-repeat="gif in gifs">
+        <img ng-src="{{gif.images.downsized_large.url}}"/>
+    </section>
+</main>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+<script src="app.js"></script>
+<script src="MainControl.js"></script>
+<script src="mainService.js"></script>
+</body>
+</html>
